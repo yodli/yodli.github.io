@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* #map {
+    height: 500px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+} */
+
+#map {
+    height: 50vh;  /* Map will take half of the screen */
+    width: 90%;    /* Small margin from the sides */
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#album-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1500px; /* Limit max width */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Ensure 6 columns on larger screens */
+@media (min-width: 1200px) {
+    #album-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* 4 columns on tablets */
+@media (max-width: 1199px) {
+    #album-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 2 columns on smaller screens */
+@media (max-width: 768px) {
+    #album-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 column on very small screens */
+@media (max-width: 480px) {
+    #album-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.album-card {
+    background: #2d2d2d;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.album-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.album-card a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
