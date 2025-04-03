@@ -1,0 +1,7 @@
+    {
+        "title": "Cara in Bengaluru",
+        "cover": "https://lh3.googleusercontent.com/pw/AP1GczMNazaw4Xb3dHED_vR2pNeAy1Ze3ext6zPFhh7tz4nWAGc5RyS9T_BgjNocxjvtB5Svt2hsVVfF-G32Ur7EmNV575qHCdw7Al5GAYlpesWys8fgzzGHdVlkv4Yiu0ZfIO7kU1qQWKJws0P4Fllosaarnw=w683-h911-s-no-gm?authuser=0",
+        "url": "https://photos.app.goo.gl/WMs3PkwDBkR7rcFC7",
+        "locations": [[12.9716, 77.5946]],
+        "private": "X"
+    },
