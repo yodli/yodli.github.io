@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Albums Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        .admin-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], input[type="url"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        #location-map {
+            height: 300px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;  /* Light gray background */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            color: #333;  /* Dark gray text */
+            overflow-x: auto;
+        }
+
+        .coordinates-display {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Travel Albums Administration</h1>
+        
+        <form id="albumForm">
+            <div class="form-group">
+                <label>Album Title:</label>
+                <input type="text" id="title" required>
+            </div>
+
+            <div class="form-group">
+                <label>Album URL:</label>
+                <input type="url" id="url" required>
+            </div>
+
+            <div class="form-group">
+                <label>Cover Image URL:</label>
+                <input type="url" id="cover" required>
+            </div>
+
+            <div class="form-group">
+                <label>Locations (click map to add):</label>
+                <div id="location-map"></div>
+                <div class="coordinates-display" id="coordinates"></div>
+                <button type="button" onclick="clearMarkers()">Clear Markers</button>
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="addAnotherAlbum()">Add Another Album</button>
+                <button type="submit">Generate Final JSON</button>
+            </div>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let map;
+        let markers = [];
+        let allAlbums = [];
+
+        // Map initialization
+        function initMap() {
+            map = L.map('location-map').setView([20, 0], 2);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+            
+            map.on('click', function(e) {
+                addMarker(e.latlng);
+            });
+        }
+
+        function addMarker(latlng) {
+            const marker = L.marker(latlng).addTo(map);
+            markers.push(latlng);
+            updateCoordinatesDisplay();
+        }
+
+        function clearMarkers() {
+            markers = [];
+            map.eachLayer(layer => {
+                if (layer instanceof L.Marker) {
+                    map.removeLayer(layer);
+                }
+            });
+            updateCoordinatesDisplay();
+        }
+
+        function updateCoordinatesDisplay() {
+            const coordDiv = document.getElementById('coordinates');
+            coordDiv.innerHTML = markers.map(m => 
+                `Lat: ${m.lat.toFixed(4)}, Lng: ${m.lng.toFixed(4)}`
+            ).join('<br>');
+        }
+
+        function addAnotherAlbum() {
+            const title = document.getElementById('title').value;
+            const url = document.getElementById('url').value;
+            const cover = document.getElementById('cover').value;
+            
+            if (!title || !url || !cover) {
+                alert('Please fill all required fields');
+                return;
+            }
+
+            allAlbums.push({
+                title,
+                url,
+                cover,
+                locations: markers.map(m => [m.lat, m.lng])
+            });
+
+            // Reset form for next entry
+            document.getElementById('albumForm').reset();
+            clearMarkers();
+            alert('Album saved! Add another or generate final JSON');
+        }
+
+    document.getElementById('albumForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        if (document.getElementById('title').value) {
+            addAnotherAlbum();
+        }
+
+        try {
+            const response = await fetch('data/albums.json');
+            const existingAlbums = await response.json();
+            const mergedAlbums = [...existingAlbums, ...allAlbums];
+            
+            // 1. Stringify with indentation
+            let jsonOutput = JSON.stringify(mergedAlbums, null, 2);
+            
+            // 2. Compact locations arrays
+            jsonOutput = jsonOutput
+                .replace(/"locations": \[\s*([\s\S]*?)\s*\]/g, (match, inner) => {
+                    const compact = inner
+                        .replace(/\s+/g, '') // Remove all whitespace
+                        .replace(/],\[/g, '],\n          ['); // Add line breaks between entries
+                    return `"locations": [${compact}]`;
+                });
+
+            document.getElementById('output').textContent = jsonOutput;
+            alert('Copy this JSON and replace your albums.json file');
+        } catch (error) {
+            let jsonOutput = JSON.stringify(allAlbums, null, 2);
+            jsonOutput = jsonOutput.replace(/"locations": \[\s*([\s\S]*?)\s*\]/g, (match, inner) => {
+                const compact = inner
+                    .replace(/\s+/g, '')
+                    .replace(/],\[/g, '],\n          [');
+                return `"locations": [${compact}]`;
+            });
+            document.getElementById('output').textContent = jsonOutput;
+        }
+
+        allAlbums = [];
+    });
+        // Initialize map on load
+        initMap();
+    </script>
+</body>
+</html>
