@@ -11,13 +11,6 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
-/* #map {
-    height: 500px;
-    width: 60%;
-    margin: 20px auto;
-    border-radius: 10px;
-} */
-
 #map {
     height: 50vh;  /* Map will take half of the screen */
     width: 90%;    /* Small margin from the sides */
@@ -38,9 +31,6 @@ h1, h2 {
 #visitor-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    max-width: 1500px; /* Limit max width */
     margin: 0 auto; /* Center the grid */
 }
 
