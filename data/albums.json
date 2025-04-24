@@ -1057,7 +1057,16 @@
     "title": "México/Guatemala: Palenque - Yaxchilan - Flores - Tikal",
     "url": "https://photos.app.goo.gl/L9WvsBYTe2J4zHnZ6",
     "cover": "https://lh3.googleusercontent.com/pw/AP1GczMyv9CDR1cqSn9g2LOlWcTliOXaFFQ-i0xVEhhpzWLhRA-hG8XyKUC2ZLwOEz5LQjF3WcUv3rEKi-v2ADpHVMzAADwFAq17zS3SfYbyQZiBv1YEkZhxpa9bY4ldnnjwn_YDsj4rTuPQJtdvKad6AiRtHQ=w1546-h1031-s-no-gm?authuser=0",
-    "locations": [[16.91083328855856,-89.92034912109376],[17.19704647638839,-89.615478515625],[17.4848,-92.0459]]
+    "locations": [[16.91083328855856,-89.92034912109376],
+      [
+        17.19704647638839,
+        -89.615478515625
+      ],
+      [
+        17.4848,
+        -92.0459
+      ]
+    ]
   },
   {
     "title": "México: Maya Riviera (Playa del Carmen - Tulum)",
@@ -1088,5 +1097,158 @@
         -92.63534545898439
       ]
     ]
+  },
+  {
+    "title": "Adirondacks: Mt. Jo - Hudson River Rafting",
+    "url": "https://photos.app.goo.gl/1QfmxWUVX3A1epQL9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczO19ExEj3-8PnFHfvNFWk9TP7DrtvCVqF3t_1OB2Wl5a2YXAIGBjYTCFeagAut6VmzXOZkiObCU14waRTkNmR8WfNHGiJzSk20Jn1qSYzWhrKwHC0sI1ENRNDCMYTldrT8W4PSjEgdY2XIp08b2miez7w=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[44.149911349566985,-73.91738891601564]
+    ]
+  },
+  {
+    "title": "Detroit - Saugatuck Dunes",
+    "url": "https://photos.app.goo.gl/frsTeognpByqLq446",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczNAl5ePiIqjZKe38mmJRU4utQreH-DIzxVjr4dnzK4uLHwW5MaRtFF-UEgdkBaLN3QHFhFJ2-kEWQZo9cz3g9ciPUiahtSqGgXZavpZcOdYdrnXghOqw8PO67--7C5Tdqdy64GlGJ7G7s49_7gTsnlung=w1540-h1031-s-no-gm?authuser=0",
+    "locations": [[42.31882795758795,-83.05389404296876],
+      [
+        42.69718235335132,
+        -86.20319366455078
+      ]
+    ]
+  },
+  {
+    "title": "Niagara Falls",
+    "url": "https://photos.app.goo.gl/ZoHn3K1KDyJGkVU87",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczPxVSuUHyGOB-ghmRsEMshiPa7b54F5hEYiUufuzDrG_klD3fJiCEKFJ6k32PRa1CB0O0W77LWVEoI44jIfKRd-LI7kj6i-bnfbFAURaYE_zTWg0iSN9I-bSgvBYo2AVjNeUE07jyVtDthdJZZK60eGuA=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[42.8814360872055,-78.88320922851564]
+    ]
+  },
+  {
+    "title": "Philadelphia",
+    "url": "https://photos.app.goo.gl/E4udVKpQ2smk7dom6",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczOSQn3JPyoIAcrZxoQ9gs8I7iZC7NUegoGu2fgjmVLPQBFPyR5m3fZdNISNo2kLkCmUdLWY9M7xPLOrgRkGUsDxjgCoimgVHSp1thwf3Y7wAQAgdp8T-4qar0MuMqcFV2oelGrKWm-bwuHwdeWf8B6zCQ=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[39.94916121880018,-75.16845703125001]
+    ]
+  },
+  {
+    "title": "Washington DC",
+    "url": "https://photos.app.goo.gl/n2HPEBLPQQstyhxx7",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczN5uFwG8AQFB9elOwE_l7g5Igy16KD2wv467elt11WCfHvzVEP-Eg2jHzjEF3bCXpDV1UOnQwjN-itN0jGe7xFBLrUKBM7dsshiOlY_gQY-y1fGGcsQGC6BC1343l5YKz6eyxk-ZOUGz50Lt933tZ-YYg=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[38.880075866440436,-77.03613281250001]
+    ]
+  },
+  {
+    "title": "Atlanta",
+    "url": "https://photos.app.goo.gl/S7CsQD1KXyVVKZfBA",
+    "cover": "https://photos.fife.usercontent.google.com/pw/AP1GczOFzS_IlIvmyZjUPNTVV5O9IZ0QrT2it9ZBBr_56N-XlVkRAb3Hq29ZTw=w1547-h1031-s-no-gm?authuser=0",
+    "locations": [[33.73714942037148,-84.39802343081335]
+    ]
+  },
+  {
+    "title": "New Orleans",
+    "url": "https://photos.app.goo.gl/riKwNc73n3CzUoGE6",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczMx3qE5rMzAE5u6trRL79UywXhCCvB1u8qoOCmMth88FWj7M5xMwZbiUqyeBaZv3GWufSUc859IFfKiIu013JXUKA8suVzf9wI4JjS__pcO8OVY3q246ZFJJv-RfgKTWJv8EpCPZA7EXchW_0J78RdNdQ=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[29.969732140521156,-90.09613037109376]
+    ]
+  },
+  {
+    "title": "Chicago",
+    "url": "https://photos.app.goo.gl/QtjtCbSFJ6kZ2BPm7",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczP2aurasttfR1Q_V3rymEbpnpstYb1xk8M2A-NkawJLcBZ3bCXOgaOiaZXkO6pHz8Iy-8B3BKRfe-ZR9fQrWhj9oPGi2_BcPshG8MMKnAdyzdY8CMC9QMbUMTPrsKjsXTOYtrAemQ7neNt3qxob54PjVQ=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[41.834525693732765,-87.64892578125]
+    ]
+  },
+  {
+    "title": "Vermont - Green Mountain National Park",
+    "url": "https://photos.app.goo.gl/Gsj3xLjSFb7AtxBn7",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczONcDSpDQuLiImdyrlCP18RyJm7_DPhsxkuMuhW5s_Up9xJh1eLN-S-uk4AOxtGQ8s6WG4IYTsbq9wQ6GkXQypQsqC2mHrSr1kQd7X140HfWJ4nLOFb8HSu_xa1O4FtTDLWJYPjUxs1EyPaXqt5qzs0KA=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[43.09471562296844,-72.99865722656251]
+    ]
+  },
+  {
+    "title": "Delaware - Bombay Hook Bird Refugee",
+    "url": "https://photos.app.goo.gl/joiubH7q4p4X3MZ28",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczP0yp2B5R_vY6aS76CHn9ngYKej4l28Pv94YKUAUh9B-H8t5iEIm3wUUfWpJ_eiQB9f8A0LeEPemg5E_dGb9b61LE2vAWfpkWssLJVNf2ACDstf50FAjOM7U-Ly2hMtHBh0pEf5Kekkhx3HSL5ERMd1fw=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[39.24524945656562,-75.43144226074219]
+    ]
+  },
+  {
+    "title": "Southern Indian Coast",
+    "url": "https://photos.app.goo.gl/KRnWEdD5wpLpuy2s9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczPiALmKCUyyu1sTdKq9AfF5UDjIV_YWbQ2vgo_A4bURyC-0f19irEBOn3WlkG5Zf4dgLxIaC0ukwPBPSgEeHQSau8-TNXw8h_GLZcDl9aJ7XTY0yLeAPjqOmi1Aqmd_nRGcDx7AhxtNiZujXMmTVIOgVg=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[9.901899957552166,78.09700851626211],
+      [
+        9.277320240609873,
+        79.29417076203728
+      ],
+      [
+        8.077249533429953,
+        77.54185142609978
+      ],
+      [
+        8.48765681112466,
+        76.92661705109978
+      ],
+      [
+        8.726633765638834,
+        76.72062339875603
+      ]
+    ]
+  },
+  {
+    "title": "Kumara Parvata Trek",
+    "url": "https://photos.app.goo.gl/d1ioaPoXPWr1LHnE9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczNH3lXOHBVxql-kzvtEr8newPN7amPDpbgI-jv0Zfrm0jhEk9VofxKR8KW8kgntPfzlxwMKXWFxWtHpr_0DMMNTWje6k8Kjw8a03Q-UkrQ3uflSflcFFpBIUmJFzYqdabqgGi0d_T5lPgH7k27jGtXzKA=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[12.654816247692807,75.69305419921876]
+    ]
+  },
+  {
+    "title": "Uttarakhand - Roopkund Trek",
+    "url": "https://photos.app.goo.gl/qrR8Etx9eAVEL9nT9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczO6Wk6kW0wNMN61WUWq3w1SWP3R_gzITbWb_cP_UVgOlL1AieQmARpQrso6DPMPB7dYB6g3wKr7MGEfXYskX3LapgbcZm7Ii4Xi0aRQUNz1UJftlOnvQBNZgXM__V2hLlC7XZvqzBIguAZZZcUL0dGYwA=w688-h1031-s-no-gm?authuser=0",
+    "locations": [[30.2622,79.7315]]
+  },
+  {
+    "title": "Uttarakhand - Har ki Dun Trek",
+    "url": "https://photos.app.goo.gl/k7kFfy9q47oCtq4Z6",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczPqN2FROYXhPqtOz5XAkxhPppi7Offz-_sR_2nxvWpZ2S1cwxKaPUBLQLRZ5mU_HkeLUaZXWCykQMgWC-c5CcTq1QKj5KSOZBR1qJxfXj7UT7c-tU4YPUpZrYVB3Dd34MM4q65Xf3iChJGliy7uWNmyEA=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[31.12,78.16]]
+  },
+  {
+    "title": "Kanara [Native]",
+    "url": "https://photos.app.goo.gl/jkfegGgsnfSpHCGa9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczPGub2ylLxqHf4S5SixjqfDSJSfcCaYzijuYifigbTePkUfbV_xfVNSsxfXDbnTBKC2VGj04kCpmZyqKVydh7heT4COcNsIjU9qVB_afmH6lg_95umOTisu0zxlH86E_3GZ83nzm7Hm1K8xphkM6AYrdA=w427-h640-s-no-gm?authuser=0",
+    "locations": [[13.5313,74.7705]]
+  },
+  {
+    "title": "Somanathapura & Shivasamudra Falls",
+    "url": "https://photos.app.goo.gl/CoxNEdwbwj8NF4FaA",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczPhf45mov3TVpFtquj-yclYApey8q1dJZJfuH5gotrfIyHHRUxhxuYfjPGcOxKo7Y5Ab4e3wTSHGI4Z2nMRREiDmdUkNanV6AuPeuNhsztUT2GZbt7Y-iTyeuFp1_mygXcub21PHqlN8iwxsKeBpnakZw=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[12.274403764948927,76.88335418701173],[12.270304652568226,77.16539382934572]]
+  },
+  {
+    "title": "Bannerghatta National Park + Lalbagh",
+    "url": "https://photos.app.goo.gl/qwi3SnP9J1udaisk9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczOT5d9OUldjSGdeHoNYXfj5caMgqVb4Pvv3B2kFIl4DOjATqtbfl8ogkAv80kp5I88e5uwuqrewJcp_XILha0TBR2UhT8r80lfpV_y0uDlXwgdHL-N-dLwicOtVxjhb5ZvN02GS5Sp06wjPvLjd0nJu5w=w640-h456-s-no-gm?authuser=0",
+    "locations": [[12.800604403736317,77.57472038269044],[12.948663553870432,77.58665084838869]]
+  },
+  {
+    "title": "Lepakshi",
+    "url": "https://photos.app.goo.gl/ciGjJ21UKt8FA4b67",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczP7_AkIZYcDxKASJsMkzpKT8DFuV9YdIDednum29yHmhhlUKMJqqt16PJ6Se0d3qAflItaEvZifRbe97nB_NGiHWGEAKsbRzFelfXw9--imQmePzFYLAoG_lRRWZaSVw-7uvuM5-zSTVQTI2GkU9G-reQ=w1546-h1031-s-no-gm?authuser=0",
+    "locations": [[13.802647535969571,77.60862350463869]]
+  },
+  {
+    "title": "Eastern Bhutan",
+    "url": "https://photos.app.goo.gl/qngcmvspb9AW4amD6",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczNN7OG_wvmFVEoCTmr2FT-nLZeMod9D8NfILqO3-GPHh3vaeSNuqGyKgGIHUdJZAXsTCUJiqHBexaVDdBO6Km4VK4IRX2RI_HfjR_YMFKL1VR6c9_6b9g5f5p3xQpwJflX7bQ6ZyEjB1qrNQIVi1eX5jA=w1024-h683-s-no-gm?authuser=0",
+    "locations": [[26.791896318954755,91.527099609375],[27.378779434256124,91.56555175781251],[27.51527487755321,90.8074951171875]]
+  },
+  {
+    "title": "Western Bhutan",
+    "url": "https://photos.app.goo.gl/vV6VR3zkU9Jm472n9",
+    "cover": "https://lh3.googleusercontent.com/pw/AP1GczOEnxD_VNWZ-VziOi2EG0mGOz3SfwY8nUbne3UVRXlSgllGhvwaLEShP1i2nucdnAsPjDqVJoTD5rG01k9PcIq1HuBgSzIhLENgftVMIn47t7QSAGibyTYrZrJSbk8P58DX4g-e4_IgVZzzuuXUC3co0Q=w1024-h683-s-no-gm?authuser=0",
+    "locations": [[27.42754719190746,89.62646484375001],
+      [27.471419764609934,90.384521484375],[27.388534707112832,89.36828613281251]]
   }
 ]
