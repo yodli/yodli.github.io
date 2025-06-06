@@ -175,7 +175,7 @@
         try {
             const response = await fetch('data/albums.json');
             const existingAlbums = await response.json();
-            const mergedAlbums = [...existingAlbums, ...allAlbums];
+            const mergedAlbums = [...allAlbums, ...existingAlbums];
             
             // 1. Stringify with indentation
             let jsonOutput = JSON.stringify(mergedAlbums, null, 2);
