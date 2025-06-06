@@ -185,7 +185,7 @@
                 .replace(/"locations": \[\s*([\s\S]*?)\s*\]/g, (match, inner) => {
                     const compact = inner
                         .replace(/\s+/g, '') // Remove all whitespace
-
+                        .replace(/],\[/g, '],\n          ['); // Add line breaks between entries
                     return `"locations": [${compact}]`;
                 });
 
